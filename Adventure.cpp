@@ -383,7 +383,7 @@ void Adventure::optimalRun() const {
     std::string bestPath;
     int loot = bestLoot(tree_.getRoot(), startHp_, "", bestPath);
 
-    std::cout << "Optimal advisor " <<std::endl;
+    std::cout << "Optimal advisor" <<std::endl;
 
     if (loot == -1) {
         std::cout << "  Result: no path survives this story" << std::endl;
