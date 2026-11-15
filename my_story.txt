@@ -1,6 +1,144 @@
 START_HP 10
-SCENE Replace this file with your own story.
+SCENE You wake up. Resurrected by your Ghost. You, a fallen warrior from centuries ago, dazed and confused. You look around, the Cosmodrome. A relic of old Earth. Before the Collapse. Ghost says, "You're alive, follow me." You come upon an alien life form, the Fallen. One of the Guardians' enemies.
 HP 0
 LOOT 0
 ITEM none
-CHOICES 0
+CHOICES 3
+LABEL Follow Ghost into the Wall
+  SCENE Inside the Wall it is dark. You climb through some vents, deeper into the Cosmodrome.
+  HP 0
+  LOOT 2
+  ITEM none
+  CHOICES 2
+  LABEL Search the dark room
+    SCENE You pick up an old rifle, a relic of the past.
+    HP -1
+    LOOT 3
+    ITEM Khvostov Rifle
+    CHOICES 2
+    LABEL Fight through the Fallen
+      SCENE You continue through the room and encounter the Fallen. You fight them off, taking a few hits, and push on toward the shipyard.
+      HP -4
+      LOOT 4
+      ITEM none
+      CHOICES 1
+      LABEL Head for the shipyard
+        SCENE You reach the shipyard and find an old jumpship. Ghost says it needs a jump drive before it can fly.
+        HP 0
+        LOOT 2
+        ITEM Arcadia Jumpship
+        CHOICES 2
+        LABEL Progress on foot
+          SCENE You leave the ship behind and set out on foot. The Fallen surround you in the open.
+          HP -10
+          LOOT 5
+          ITEM none
+          CHOICES 0
+        LABEL Search for the jump drive
+          SCENE The trail leads to the Captain's den. The Fallen Captain stands guarding the jump drive.
+          HP -1
+          LOOT 3
+          ITEM none
+          CHOICES 2
+          LABEL Hide back in the vents
+            SCENE You hide back in the vents and crawl outside the Wall, back where you started.
+            HP 0
+            LOOT 1
+            ITEM none
+            CHOICES 1
+            LABEL Keep moving
+              SCENE A Fallen Captain and a Vandal sniper spot you.
+              HP -1
+              LOOT 2
+              ITEM none
+              CHOICES 2
+              LABEL Hide
+                SCENE You hide, but they spot you anyway. The sniper takes you out.
+                HP -10
+                LOOT 4
+                ITEM none
+                CHOICES 0
+              LABEL Fight them
+                SCENE You take down the Vandal, but the Captain is too strong and you fall.
+                HP -10
+                LOOT 6
+                ITEM none
+                CHOICES 0
+          LABEL Fight the Captain
+            SCENE You fight the Captain and win. The jump drive is yours.
+            HP -2
+            LOOT 6
+            ITEM Jump Drive
+            CHOICES 1
+            LABEL Fly to the Tower
+              SCENE You fly to the Tower and make it to the safehold.
+              HP 0
+              LOOT 10
+              ITEM none
+              CHOICES 0
+    LABEL Hide in the vents
+      SCENE The Fallen smell you. You put up a good fight but die to a stab from a Dreg.
+      HP -10
+      LOOT 1
+      ITEM none
+      CHOICES 0
+  LABEL Turn back outside
+    SCENE You turn back around, fall through a hole in the Wall, break your legs, and die.
+    HP -10
+    LOOT 2
+    ITEM none
+    CHOICES 0
+LABEL Discuss what's going on
+  SCENE You discuss the Collapse with Ghost. He tells you humanity had a Golden Age, ended by the Darkness.
+  HP 0
+  LOOT 5
+  ITEM none
+  CHOICES 1
+  LABEL Look around
+    SCENE The Captain and a Vandal sniper look down at you from a ledge on the Wall. You are still on the ground.
+    HP -2
+    LOOT 3
+    ITEM none
+    CHOICES 2
+    LABEL Hide
+      SCENE You hide from the Captain, not knowing about the sniper. You die.
+      HP -10
+      LOOT 6
+      ITEM none
+      CHOICES 0
+    LABEL Run into the Wall
+      SCENE You run into the Wall, safe for now, and crawl through the vents looking for a way out.
+      HP -3
+      LOOT 2
+      ITEM none
+      CHOICES 0
+LABEL Survey the area
+  SCENE You walk around looking at old rusted cars with skeletons in them, a barren land behind you.
+  HP 0
+  LOOT 3
+  ITEM none
+  CHOICES 2
+  LABEL Keep walking
+    SCENE A Fallen jump ship spots you.
+    HP -2
+    LOOT 2
+    ITEM none
+    CHOICES 1
+    LABEL Try to run
+      SCENE It drops Fallen troops on you. With no weapon to fight back, you die.
+      HP -10
+      LOOT 4
+      ITEM none
+      CHOICES 0
+  LABEL Loot the cars
+    SCENE You search the rusted cars for loot but find nothing. Then a Fallen jump ship spots you.
+    HP -2
+    LOOT 0
+    ITEM none
+    CHOICES 1
+    LABEL Try to run
+      SCENE It drops Fallen troops on you. With no weapon to fight back, you die.
+      HP -10
+      LOOT 4
+      ITEM none
+      CHOICES 0
